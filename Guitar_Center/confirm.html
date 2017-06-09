@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-7">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Setting a responsive Viewport -->
+
+    <title>Guitar Center - Order Confirmation</title>
+
+    <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap 3.3.7 -->
+
+    <link href="styles/stylesheet.css" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]                    // >
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    ![endif]-->
+</head>
+<body id="page3">
+
+<!-- Actual container starts -->
+<div class="container">
+
+    <!-- Navigation STARTS -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Guitar Center</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- Navigation ENDS -->
+
+    <!-- PRODUCT CONTENT STARTS -->
+
+    <div class="row">
+
+        <div class="jumbotron">
+            <h2>Thank you <span class="label-orange" id="fn"></span> <span class="label-orange" id="ln"></span><small> for shopping with us</small></h2>
+            <p>Your order has been placed. <span class="label-success glyphicon glyphicon-ok"></span> </p>
+        </div>
+
+            <div class="prodInfo col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+
+
+
+                <div class="well row" id="divProdInfo" aria-labelledby="btnProdInfo">
+
+                    <table class="table table-responsive table-striped">
+
+                        <thead>
+                            <tr>
+                               <td colspan="2">
+                                   <h2 class="text-center text-uppercase">CONFIRMATION</h2>
+                               </td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                        <tr>
+                            <td colspan="2">
+                                <div class="imgContainer col-lg-12 col-md-12">
+                                    <img class="img-responsive img-rounded" src="" id="prodImg">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label for="pProdInfoID">ID:</label>
+                            </td>
+                            <td class="col-md-9">
+                                <span class="text-justify" id="pProdInfoID"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label for="pProdInfoDesc">Description</label>
+                            </td>
+                            <td class="col-md-9">
+                                <span class="text-justify" id="pProdInfoDesc"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label for="pProdInfoPrice">Price:</label>
+                            </td>
+                            <td class="col-md-9">
+                                <span class="text-justify" id="pProdInfoPrice"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label for="pProdInfoStock">Stock:</label>
+                            </td>
+                            <td class="col-md-9">
+                                <span class="text-justify" id="pProdInfoStock"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label for="pShipInfo">Shipping Details:</label>
+                            </td>
+                            <td class="col-md-9">
+                                <span class="text-justify" id="pShipInfo"></span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label>First Name:</label>
+                            </td>
+                            <td class="col-md-9">
+                                <span class="text-justify" id="fNameID2"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label>Last Name:</label>
+                            </td>
+                            <td  class="col-md-9">
+                                <span class="text-justify" id="lNameID2"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label>Email:</label>
+                            </td>
+                            <td  class="col-md-9">
+                                <span class="text-justify" id="emailID2"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label>Address 1:</label>
+                            </td>
+                            <td  class="col-md-9">
+                                <span class="text-justify" id="add1ID2"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label>Address 2:</label>
+                            </td>
+                            <td  class="col-md-9">
+                                <span class="text-justify" id="add2ID2"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label>City:</label>
+                            </td>
+                            <td  class="col-md-9">
+                                <span class="text-justify" id="cityID2"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label>Zip:</label>
+                            </td>
+                            <td  class="col-md-9">
+                                <span class="text-justify" id="zipID2"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label>Country:</label>
+                            </td>
+                            <td  class="col-md-9">
+                                <span class="text-justify" id="countryID2"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label>State:</label>
+                            </td>
+                            <td  class="col-md-9" >
+                                <span class="text-justify" id="stateID2"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-xs-4 active text-uppercase text-right">
+                                <label>Phone:</label>
+                            </td>
+                            <td  class="col-md-9" >
+                                <span class="text-justify" id="phoneID2"></span>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+            </div>
+
+            <div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+                <button class="btn btn-info btn-lg text-uppercase btn-block" id="btnGoBack">GO to home</button>
+            </div>
+
+
+
+    </div>
+
+    <!-- PRODUCT CONTENT ENDS -->
+
+</div>
+<!-- ACTUAL CONTAINER ENDS -->
+
+<footer class="footer">
+    <div class="container text-center">
+        <p class="text-muted">Coded by Suraj Davariya</p>
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1-12-4.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+
+<script src="js/pg3.js"></script>
+<!-- Script  -->
+</body>
+</html>

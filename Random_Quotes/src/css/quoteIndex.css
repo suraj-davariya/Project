@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+
+body{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+#btnNxt{
+    transition: letter-spacing 0.5s ease-in-out, transform 0.6s;
+}
+
+#btnNxt:hover{
+    letter-spacing:25px;
+    cursor:pointer;
+    transform: rotate(360deg);
+}
+
+
+section::before{
+    content:"Suraj";
+    font-weight:bold;
+    font-family:"Homemade Apple",cursiv;
+    font-size: 350px;
+    position:absolute;
+    color:#999;
+    top:-10px;
+    text-shadow: 1px 1px 10px orangered;
+
+}
+
+main{
+    margin: 10px;
+    max-width: 1000px;
+}
+
+p{
+    line-height: 1.3em;
+    color: #444;
+    font-family: 'Pacifico',cursive;
+}
+
+p::first-letter{
+    color: orangered;
+    font-size: 2.9em;
+}
+
+#auth{
+    color:#222 !important;
+    font-weight: bold;
+    font-family: 'Limelight',serif;
+}
+
+#post{
+    position: relative;
+    margin: 50px auto;
+    max-width: 400px;
+    font-size: 2.2em;
+    top: 50px;
+}
+
+#post::before{
+    content: '\201C';
+    left: -200px;
+}
+
+#post::after{
+    content: '\201D';
+    right: -200px;
+}
+
+#post::before, #post::after{
+
+    position: absolute;
+    font-size: 10em;
+    font-weight: bold;
+    color: orangered;
+    top: -80px;
+    font-family:curly;
+}

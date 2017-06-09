@@ -1,0 +1,62 @@
+
+<!-- .main-content{
+    padding: 15px;
+    font-size: 18px;
+    min-height: 300px;
+    background: #dbdfe5;
+    margin-bottom: 10px;
+} -->
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-brand {
+    background: url(http://s32.postimg.org/oh4nfnhrp/sd_logo.png) center / contain no-repeat;
+}
+.bg-1 {
+    background-color:#F78501;
+    color:#000000;
+}
+.bg-2 {
+    background-color:#333333;
+    color:#F78501;
+
+}
+.bg-3 {
+    background-color:#FF5C00;
+    color:#000000;
+}
+.bg-4 {
+    background-color:#333333;
+    color:#FF5C00;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.img-responsive {
+    display:inline;
+}
+#img_id {
+    width:40%;
+}
+.icon-in-black {
+    color:#f4511e
+}
+body {
+    font-family:Ubuntu;
+    padding-top: 60px;
+}
+.title, .interest,footer {
+    font-family:Pacifico !important;
+}
+.icon-bar {
+    background-color:#FF5C00 !important;
+}

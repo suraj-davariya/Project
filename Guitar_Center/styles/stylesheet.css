@@ -1,0 +1,193 @@
+/*
+Color SCHEME
+003049-d62828-f77f00-fcbf49-f5f1de
+https://coolors.co/003049-d93b3b-fcd0a2-fcbf49-eae2b7
+*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: linear-gradient(120deg, #FBF9F1 0%, #F5F1DE 100%);
+}
+
+.navbar-inverse {
+    background-color: #003049;
+    border-color: #000507;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #F7D7D7;
+    background-color: #D62828;
+}
+
+.navbar-brand{
+    font-weight: bolder;
+}
+
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+    color: #F7D7D7;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #F7D7D7;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-brand{
+    color: #D62828;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #D62828;
+    }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-image: linear-gradient(120deg, #FCFBEC 0%, #F6F3C7 100%);
+}
+
+.showBanner{
+    position: relative;
+    margin: auto 0;
+    margin-bottom: 60px;
+    background-color:#FCDCB9;
+    border: 0.1em solid black;
+    border-radius: 0.2em;
+    padding: 15px 60px;
+    overflow-y: auto;
+}
+
+.detailTitle{
+    font-weight: bold;
+}
+
+.panel-primary {
+    border-color:#D93B3B;
+}
+
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #D62828;
+    border-color: #D93B3B;
+}
+
+input:hover, select:hover {
+    background-color:#F9AD5C;
+    opacity: 0.5;
+}
+
+.form-control:hover::-webkit-input-placeholder { color: #9999aa; }
+.form-control:hover:-moz-placeholder { color: #9999aa; }
+.form-control:hover::-moz-placeholder { color: black; }
+.form-control:hover:-ms-input-placeholder { color: black; }
+
+.form-control:focus{
+    border-color: #F8962E;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(247,127,0,.6);
+    opacity: 1;
+}
+
+
+.btn-primary{
+    background-color:#F77F00;
+    border-color:#E17400;
+}
+
+.btn-primary:hover{
+    background-color:#E17400;
+    border-color:#CB6800;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #F78A17;
+    border-color: #E17400;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #F9AD5C;
+    border-color: #E17400;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #E17400;
+    border-color: #B45D00;
+}
+
+.topMargin{
+    margin-top: 0.8em;
+}
+
+.table-responsive {
+    border: 1px solid #F9AD5C;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: 1px solid #F9AD5C;
+}
+
+.table-hover>tbody>tr:hover {
+    background-color: #F9AD5C;
+}
+
+#reviewDivID {
+    display: none;
+}
+
+#purchaseDivID{
+    display: block;
+}
+
+.imgContainer{
+    object-fit: cover; // here
+    -o-object-fit: cover;
+}
+
+.img-prod-index-page{
+    height: 180px;
+    max-height: 180px;
+}
+
+span.label-success.glyphicon.glyphicon-ok {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: #F78A17;
+    display: inline-table;
+    text-align: center;
+}
+
+.label-orange{
+    background-color: #F78A17;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+    padding: 60px 15px 0;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}

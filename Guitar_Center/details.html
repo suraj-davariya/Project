@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-7">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Setting a responsive Viewport -->
+
+    <title>Guitar Center - Product Details</title>
+
+    <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap 3.3.7 -->
+
+    <link href="styles/stylesheet.css" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]                    // >
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    ![endif]-->
+</head>
+<body id="page2">
+
+    <!-- Actual container starts -->
+    <div class="container">
+
+        <!-- Navigation STARTS -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Guitar Center</a>
+            </div>
+
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-- Navigation ENDS -->
+
+        <!-- PRODUCT CONTENT STARTS -->
+        <div class="showBanner">
+            <!-- PRODUCT DETAILS STARTS -->
+            <div class="row">
+                <div class="imgContainer col-md-6 col-lg-6">
+                    <img class="img-responsive img-rounded" src="" id="prodImg">
+                </div>
+
+                <div class="prodInfo col-md-6 col-lg-6">
+<!--
+                    <p class="bg-primary" id="pProdInfo2"></p>
+-->
+
+                    <div class="well row" id="divProdInfo" aria-labelledby="btnProdInfo">
+
+                        <table class="table table-responsive table-hover table-striped">
+                            <tbody>
+                            <tr>
+                                <td class="col-xs-4 active text-uppercase text-right">
+                                    <label for="pProdInfoID">ID:</label>
+                                </td>
+                                <td class="col-md-9">
+                                    <span class="text-justify" id="pProdInfoID"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="col-xs-4 active text-uppercase text-right">
+                                    <label for="pProdInfoDesc">Description</label>
+                                </td>
+                                <td class="col-md-9">
+                                    <span class="text-justify" id="pProdInfoDesc"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="col-xs-4 active text-uppercase text-right">
+                                    <label for="pProdInfoPrice">Price:</label>
+                                </td>
+                                <td class="col-md-9">
+                                    <span class="text-justify" id="pProdInfoPrice"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="col-xs-4 active text-uppercase text-right">
+                                    <label for="pProdInfoStock">Stock:</label>
+                                </td>
+                                <td class="col-md-9">
+                                    <span class="text-justify" id="pProdInfoStock"></span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- PRODUCT DETAILS ENDS -->
+
+            <!-- PURCHASE DETAILS STARTS-->
+            <div class="container-fluid topMargin" id="purchaseDivID">
+                <div class="panel panel-primary row">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Payment Information</h2>
+                    </div>
+                    <div class="panel-body">
+                        <form name="purchase" id="purchaseForm" class="form-horizontal" onsubmit="return false">
+
+                            <div class="row">
+                                <!-- FIRST HALF STARTS -->
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+
+                                    <div class="form-group">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <label for="fNameID" class="control-label">First Name</label>
+                                        </div>
+                                        <div class=" col-lg-7 col-md-7 col-sm-7">
+                                            <input type="text" name="fName" placeholder="First Name" class="form-control" id="fNameID" pattern="^[a-zA-Z]*$" title="Must contains alphabets and at least 2 characters" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <label for="lNameID" class="control-label">Last Name</label>
+                                        </div>
+                                        <div class=" col-lg-7 col-md-7 col-sm-7">
+                                            <input type="text" name="lName" placeholder="Last Name" class="form-control col-lg-4 col-md-4 col-sm-4" id="lNameID"  pattern="^[a-zA-Z]*$" title="Must contains alphabets and at least 2 characters" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <label for="cardID" class="control-label">Card Number</label>
+                                        </div>
+                                        <div class=" col-lg-7 col-md-7 col-sm-7">
+                                            <input type="text" name="cardNumber" placeholder="1234567890123456" class="form-control col-lg-4 col-md-4 col-sm-4" id="cardID"  pattern="^\d{16}$" title="Must contains 16 digits number only" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <label for="cvvID" class="control-label">CVV</label>
+                                        </div>
+                                        <div class=" col-lg-7 col-md-7 col-sm-7">
+                                            <input type="password" name="cvv" placeholder="000" class="form-control col-lg-4 col-md-4 col-sm-4" id="cvvID"  pattern="^\d{3}$" title="Must contains 3 digits number only" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <label for="month" class="control-label">Expiration Date</label>
+                                            <label for="year" class="control-label" style="display: none">Expiration Date</label>
+                                        </div>
+                                        <div class=" col-lg-7 col-md-7 col-sm-7">
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <select class="form-control" id="month" aria-label="exp">
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <select class="form-control" id="year" aria-label="exp">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <label for="emailID"  class="control-label">Email</label>
+                                        </div>
+                                        <div class=" col-lg-7 col-md-7 col-sm-7">
+                                            <input type="text" name="email" placeholder="abc@xyz.com" class="form-control" id="emailID" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" title="Please enter a valid email address" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FIRST HALF ENDS HERE -->
+
+                                <!-- SECOND HALF STARTS HERE -->
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+
+                                    <div class="form-group">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <label for="add1ID" class="control-label">Address 1</label>
+                                        </div>
+                                        <div class=" col-lg-7 col-md-7 col-sm-7">
+                                            <input type="text" name="add1" placeholder="Address Line 1" class="form-control" id="add1ID" title="Please enter address line 1 and must contain 10 characters" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <label for="add2ID" class="control-label">Address 2</label>
+                                        </div>
+                                        <div class=" col-lg-7 col-md-7 col-sm-7">
+                                            <input type="text" name="add2" placeholder="Address Line 2(Optional)" class="form-control" id="add2ID" title="Please enter address line 2 and must contain 10 characters">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <label for="cityID" class="control-label">City</label>
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <input type="text" name="city" placeholder="City" class="form-control" id="cityID" pattern="([a-zA-Z_\- ]+){2,}" title="Please enter a valid city here" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-5 col-md-5 col-sm-5">
+                                            <label for="zipID" class="control-label">Zip/Postal Code</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <input type="text" name="zip" placeholder="12345" class="form-control" id="zipID" pattern="\d{5}" title="Please enter a valid zip code" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <label for="countryID" class="control-label">Country</label>
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <select id="countryID" class="form-control" required>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <label for="stateID" class="control-label">State</label>
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <select id="stateID"  class="form-control" required>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <label for="phoneID" class="control-label">Phone</label>
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7">
+                                            <input type="text" name="phone" class="form-control" placeholder="2122122121" id="phoneID" pattern="\d{10}" title="Please enter a valid 10 digit phone number (including area code)" required>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- SECOND HALF ENDS HERE -->
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xm-12">
+                                <div class="text-center">
+                                    <div class="form-group">
+
+                                        <button type="submit" class="btn btn-primary btn-block" id="submitBtnID">Review</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- PURCHASE DETAILS ENDS-->
+
+            <div class="container-fluid bg-warning" id="reviewDivID">
+
+                <h2 class="text-center text-uppercase">REVIEW</h2>
+
+                <table class="table table-responsive table-hover table-striped">
+
+
+                    <tbody>
+                        <tr>
+                            <th colspan="2">
+                                <button class="btn btn-block btn-primary" id="editBtnID">EDIT</button>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td><strong>First Name</strong></td>
+                            <td id="fNameID2"></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Last Name</strong></td>
+                            <td id="lNameID2"></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Email</strong></td>
+                            <td id="emailID2"></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Address 1</strong></td>
+                            <td id="add1ID2"></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Address 2</strong></td>
+                            <td id="add2ID2"></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>City</strong></td>
+                            <td id="cityID2"></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Zip</strong></td>
+                            <td id="zipID2"></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Country</strong></td>
+                            <td id="countryID2"></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>State</strong></td>
+                            <td id="stateID2"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Phone</strong></td>
+                            <td id="phoneID2"></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <button type="button" class="btn btn-success btn-block btn-lg" id="btnBuyID">BUY</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+        </div>
+        <!-- PRODUCT CONTENT ENDS -->
+
+    </div>
+    <!-- ACTUAL CONTAINER ENDS -->
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="text-muted">Coded by Suraj Davariya</p>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1-12-4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+
+    <script src="js/pg2.js"></script>
+    <script src="js/pg2_2.js"></script>
+    <!-- Script  -->
+</body>
+</html>
